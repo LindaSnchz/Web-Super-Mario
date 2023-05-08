@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display:block
+}
+main{
+    min-height: 79vh;
+    display: flex;
+    background-color: wheat;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+section{
+    display: flex;
+    border-radius: 1rem;
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    transition: all 0.5s;
+}
+.fondomario, .fondokamek{
+    background-image: url(/assets/img/fondored.png);
+    background-size: 150px;
+}
+.fondoluigi, .fondopenguin{
+    background-image: url(/assets/img/fondogreen.png);
+    background-size: 150px;
+}
+.fondopeach{
+    background-image: url(/assets/img/fondopurple.png);
+    background-size: 150px;
+}
+.fondotoad, .fondolumalee{
+    background-image: url(/assets/img/fondoblue.png);
+    background-size: 150px;
+}
+.fondodonkey{
+    background-image: url(/assets/img/fondoamarillo.png);
+    background-size: 150px;
+}
+.fondobrowser{
+    background-image: url(/assets/img/fondogrey.png);
+    background-size: 150px;
+}
+section img{
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    /* background-color: rgb(210, 14, 11); */
+    border-radius: 1rem 0 0 1rem;
+}
+section div{
+    width: 50%;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section div h3{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+h2{
+    display: block;
+    font-weight: bold;
+}
+section div p{
+    padding: 0.5rem;
+}
+section:hover{
+    transform: scale(1.2);
+}
+p{
+    margin-right: 10px;
+    color: white;
+    display: block;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+main h2{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
